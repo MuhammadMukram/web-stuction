@@ -1,0 +1,34 @@
+@import './root.css';
+
+
+/*
+ * Navbar
+ */
+.has-search .form-control {
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+    width: 25rem;
+    border-radius: 18px;
+}
+
+.has-search .search-icon {
+    position: absolute;
+    z-index: 1;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+}
+
+.has-search .form-control::placeholder {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.nav-item.profile {
+    align-items: center;
+}
+
+.nav button {
+    border-radius: 18px;
+}

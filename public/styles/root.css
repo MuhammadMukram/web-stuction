@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --orange: #F15025;
+    --white: #FFFFFF;
+    --semi-white: #E6E8E6;
+    --grey: #CED0CE;
+    --dark: #191919;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-montserrat);
+}
+
+/* 
+ * Layout Classes
+ * 
+ */
+
+/* ~ Backgrounds */
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-semi-white {
+    background-color: var(--semi-white);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+/* ~ Texts */
+.text-orange {
+    color: var(--orange);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-semi-white {
+    color: var(--semi-white);
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
