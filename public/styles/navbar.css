@@ -1,0 +1,76 @@
+/*
+ * Navbar
+ */
+ .navbar-brand {
+    width: 50%;
+}
+
+.has-search .form-control {
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+    width: calc(28vw); /* 28% of viewport width */
+    border-radius: 18px;
+}
+
+.has-search .search-icon {
+    position: absolute;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+}
+
+.has-search .form-control::placeholder {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.nav-item.profile {
+    align-items: center;
+}
+
+.nav button {
+    border-radius: 18px;
+}
+
+/*
+ * Responsiveness
+ */
+
+/* When < 1200px - Large Device */
+@media (max-width: 1200px) {
+    .navbar-brand {
+        width: auto;
+        margin-right: 2rem;
+    }
+
+}
+
+/* When < 992px - Laptops */
+@media (max-width: 992px) {
+    .nav-item {
+        justify-content: center;
+    }
+
+    .has-search .form-control {
+        width: 18rem;
+    }
+
+    .profile div span,
+    .new-post-button button span {
+        display: none;
+    }
+}
+
+/* When < 768px - Tablets*/
+@media (max-width: 767px) {
+    .profile div span,
+    .new-post-button button span {
+        display: inline-block;
+    }
+
+    .has-search .form-control,
+    .new-post-button button {
+        width: calc(100vw - 4rem);
+    }
+}
