@@ -11,7 +11,7 @@
 .has-search .form-control {
     padding-left: 3.8rem;
     padding-right: 3.8rem;
-    width: 25rem;
+    width: 24rem;
     border-radius: 18px;
 }
 
@@ -37,7 +37,7 @@
     border-radius: 18px;
 }
 
-/* 
+/*
  * Responsiveness
  */
 
@@ -49,3 +49,17 @@
     }
 }
 
+/* When < 992px */
+@media (max-width: 992px) {
+    .nav-item {
+        justify-content: center;
+    }
+
+}
+
+/* When < 768px */
+/* @media (max-width: 768px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+} */
