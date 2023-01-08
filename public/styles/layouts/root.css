@@ -12,6 +12,7 @@
 
 html {
     box-sizing: border-box;
+    /* font-size: 100%; */
 }
 
 *,
@@ -22,6 +23,7 @@ html {
 
 body {
     font-family: var(--font-montserrat);
+    /* font-size: 1rem; */
 }
 
 /* 
@@ -67,3 +69,12 @@ body {
     color: var(--grey);
 }
 
+/* 
+ * Responsiveness
+ */
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 0.95rem;
+    }
+}

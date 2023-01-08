@@ -1,0 +1,55 @@
+/*
+ * Navbar
+ */ 
+ .search-bar .form-control {
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+    width: calc(28vw); /* 28% of viewport width */
+    border-radius: 18px;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+}
+
+.search-bar .form-control::placeholder {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.navigations .new-post {
+    border-radius: 18px;
+}
+
+.navigations .search-button {
+    display: none;
+}
+
+.navbar-brand, .navigations {
+    width: 30vw;
+}
+
+/*
+ * Navbar's Responsiveness 
+ */
+
+@media (max-width: 992px) {
+    .navigations button span {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar,
+    .navigations .profile-name {
+        display: none;
+    }
+
+    .navigations .search-button {
+        display: block;
+    }
+}
