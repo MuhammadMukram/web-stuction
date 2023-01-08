@@ -3,7 +3,17 @@
     *
     *--}}
 <nav class="navbar navbar-light navbar-expand-md fixed-top bg-grey">
-    <div class="container d-flex justify-content-between align-items-center">
+
+    <div class="container justify-content-center position-relative d-none" id="hidden-search-bar">
+        <div class="hidden-search-bar">
+            <input type="text" class="form-control nav-search-form" placeholder="Search">
+            <button class="btn bg-danger rounded-circle" id="show-navbar-elements">
+                <i class="bi bi-arrow-left text-white"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-between align-items-center" id="navbar-elements">
         <a href="/" class="navbar-brand me-auto">
             <span class="text-orange">Stuc</span><span class="text-black">tion</span>
         </a>
@@ -15,7 +25,7 @@
         </div>
 
         <div class="navigations ms-auto d-flex justify-content-end align-items-center">
-            <button class="btn search-button bg-semi-white rounded-circle me-2">
+            <button class="btn search-button bg-semi-white rounded-circle me-2" id="show-search">
                 <i class="bi bi-search text-orange"></i>
             </button>
 

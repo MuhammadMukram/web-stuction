@@ -1,11 +1,22 @@
 /*
  * Navbar
  */ 
- .search-bar .form-control {
+
+.search-bar .form-control,
+.hidden-search-bar .form-control {
     padding-left: 3.8rem;
     padding-right: 3.8rem;
     width: calc(28vw); /* 28% of viewport width */
     border-radius: 18px;
+}
+
+.hidden-search-bar .form-control {
+    width: 90%;
+}
+
+.hidden-search-bar button {
+    position: absolute;
+    top: 0;
 }
 
 .search-bar .search-icon {
@@ -51,5 +62,11 @@
 
     .navigations .search-button {
         display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    nav.navbar .container {
+        width: 90%;
     }
 }
