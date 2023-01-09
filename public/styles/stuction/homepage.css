@@ -11,8 +11,8 @@
     margin: 0 auto;
 }
 
-.content .card img,
-.mask {
+figure img, 
+.content .card img {
     width: 100%;
     height: 15.2rem;
     object-fit: cover;
@@ -25,6 +25,27 @@
 
 .content .card .card-body {
     height: 6rem;
+}
+
+[class^='imghvr-'],
+[class*=' imghvr-'],
+figcaption {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+[class*=' bi-heart-'] {
+    animation: 0.3s ease-out 0s 1 appear;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .author img.profile {
@@ -58,7 +79,6 @@
 /* 
  * Responsivness 
  */
-
 @media (max-width: 576px) {
     .content .card {
         width: 20rem;
