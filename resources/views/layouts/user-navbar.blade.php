@@ -43,10 +43,14 @@
             <div class="dropdown m-0 p-0">
                 <button class="btn bg-transparent dropdown-toggle px-1" data-bs-toggle="dropdown"
                     aria-expanded="false"></button>
-                <ul class="dropdown-menu bg-semi-white position-absolute">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu dropdown-menu-end bg-semi-white border-0">
+                    <div class="container-fluid position-relative py-2">
+                        <span class="triangle position-absolute translate-middle text-semi-white">&#9650;</span>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </div>
+                    
                 </ul>
             </div>
         </div>

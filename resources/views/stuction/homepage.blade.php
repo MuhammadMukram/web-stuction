@@ -15,14 +15,12 @@
     <div class="container my-5 pt-5 justify-content-center">
         <div class="content w-100">
             <div class="card">
-                <img src="{{ asset('sample/card.jpg') }}" class="card-img-top position-absolute">
-                <figure class="imghvr-fade">
-                    {{-- NOTE : Nanti cari cara lain supaya gambarnya cuma perlu di load 1 saja --}}
-                    <img src="{{ asset('sample/card.jpg') }}" class="overlay">
-                    <figcaption>
+                {{-- <img src="{{ asset('sample/card.jpg') }}" class="card-img-top"> --}}
+                <figure class="imghvr-fade rounded-top w-100 bg-dark">
+                    <img src="{{ asset('sample/card.jpg') }}" class="card-img-top">
+                    <figcaption class="bg-dark">
                         <div class="container-fluid h-100 d-flex justify-content-center">
                             <button class="btn bg-orange text-white rounded-pill my-auto px-4">View</button>
-
                         </div>
                     </figcaption>
                 </figure>
@@ -59,7 +57,6 @@
                 </div>
             </div>
 
-
         </div>
     </div>
 
@@ -91,8 +88,6 @@
                     button.innerHTML = '<i class="bi bi-heart"></i>';
                 }
                 
-
-
             });
         });
 

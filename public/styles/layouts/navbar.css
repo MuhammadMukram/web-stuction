@@ -8,6 +8,7 @@
     padding-right: 3.8rem;
     width: calc(28vw); /* 28% of viewport width */
     border-radius: 18px;
+    
 }
 
 .hidden-search-bar .form-control {
@@ -42,6 +43,18 @@
 
 .navbar-brand, .navigations {
     width: 30vw;
+}
+
+.dropdown-menu span.triangle {
+    font-size: 1.8rem;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+    top: -12px;
+    right: -18px;
 }
 
 /*
