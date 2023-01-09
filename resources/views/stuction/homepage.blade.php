@@ -12,45 +12,88 @@
 @endsection
 
 @section('content')
-    <div class="container border-0 mx-5 my-5">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-center">
-                                    <button class="bg-black btn rounded-circle">
-                                        <i class="bi bi-person text-orange"></i>
-                                    </button>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <span class="text-orange my-auto">Jones Doe<span>
-                                </div>
-                            </div>
+    <div class="container my-5 pt-5 justify-content-center">
+        <div class="content w-100">
+            <div class="card">
+                {{-- <img src="{{ asset('sample/card.jpg') }}" class="card-img-top"> --}}
+                <figure class="imghvr-fade rounded-top w-100 bg-dark">
+                    <img src="{{ asset('sample/card.jpg') }}" class="card-img-top">
+                    <figcaption class="bg-dark">
+                        <div class="container-fluid h-100 d-flex justify-content-center">
+                            <button class="btn bg-orange text-white rounded-pill my-auto px-4">View</button>
                         </div>
+                    </figcaption>
+                </figure>
+
+                <div class="card-body d-flex">
+                    <div class="col d-flex flex-column my-auto">
+                        <span>
+                            <a href="#" class="title">lorem20</a>
+                        </span>
+                        <span class="date">DD/MM/YYYY</span>
                     </div>
-                    <div class="col-9">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-center">
-                                    <button class="bg-black btn rounded-circle">
-                                        <i class="bi bi-person text-orange"></i>
-                                    </button>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <span class="text-orange my-auto">Jones Doe<span>
-                                </div>
-                            </div>
+
+                    <div class="col d-flex justify-content-end gap-3 align-items-center">
+                        <div class="author align-items-center">
+                            <a href="#">
+                                <img src="{{ asset('sample/card.jpg') }}" class="profile rounded-circle" alt="profile">
+                            </a>
+                        </div>
+
+                        <div class="d-flex comment align-items-center gap-1">
+                            <button class="bg-transparent border-0 p-0 comment-button">
+                                <i class="bi bi-chat"></i>
+                            </button>
+                            <span class="ms-1">30012003</span>
+                        </div>
+
+                        <div class="d-flex like align-items-center gap-1">
+                            <button class="bg-transparent border-0 p-0 like-button">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <span class="ms-1">120603</span>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+
+
 @endsection
 
 
 @section('scripts')
+    <script src="{{ asset('scripts/user-navbar.js') }}"></script>
+
+    <script>
+        const likeButtons = document.querySelectorAll('.like-button');
+        const likeCounters = document.querySelectorAll('.like span');
+        const commentButtons = document.querySelectorAll('.comment-button');
+        const commentCounters = document.querySelectorAll('.comment span');
+
+        function countFormat(num) {
+            return new Intl.NumberFormat('en-GB', { notation: "compact", compactDisplay: "short" }).format(num)
+        }
+
+        likeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+
+                if (!button.classList.contains('liked')) {
+                    button.classList.toggle('liked');
+                    button.innerHTML = '<i class="bi bi-heart-fill text-danger"></i>';
+                } else { 
+                    button.classList.toggle('liked');
+                    button.innerHTML = '<i class="bi bi-heart"></i>';
+                }
+                
+            });
+        });
+
+        likeCounters.forEach(total => {total.innerHTML = countFormat(parseInt(total.innerHTML))});
+        commentCounters.forEach(total => {total.innerHTML = countFormat(parseInt(total.innerHTML))});
+
+    </script>
 
 @endsection
