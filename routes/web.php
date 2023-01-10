@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/profile', function () {
     return view('stuction.user-profile');
 });
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
