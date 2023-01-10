@@ -1,0 +1,28 @@
+.banner,
+.banner img {
+    max-height: 512px;
+    min-height: 256px;
+}
+
+.banner img {
+    object-fit: cover;
+}
+
+.profile-picture {
+    max-width: 128px;
+    max-height: 128px;
+}
+
+.profile-info .container {
+    top: calc(-10rem - 2vw);
+    border-radius: 12px;
+    background-color: #ced0cec8;
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+}
+
+@media (max-width: 576px) {
+    svg.wave {
+        height: 76px;
+    }
+}

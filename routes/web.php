@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('stuction.homepage');
 });
+
+Route::get('/profile', function () {
+    return view('stuction.user-profile');
+});
