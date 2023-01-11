@@ -21,6 +21,12 @@
     -webkit-backdrop-filter: blur(6.3px);
 }
 
+.profile-picture img {
+    width: calc(8rem + 10vw);
+    height: calc(8rem + 10vw);
+    object-fit: cover;
+}
+
 @media (max-width: 576px) {
     svg.wave {
         height: 76px;

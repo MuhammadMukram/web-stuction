@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="{{ asset('styles/stuction/user-profile.css') }}">
     <style>
         /* .banner {
-            background-image: url('{{ asset('sample/banner-sample.png')}} ');
-            overflow: hidden;
-            background-position: center;
-            background-size: cover;
-            height: 768px;
-        } */
+                background-image: url('{{ asset('sample/banner-sample.png') }} ');
+                overflow: hidden;
+                background-position: center;
+                background-size: cover;
+                height: 768px;
+            } */
     </style>
 @endsection
 
@@ -23,7 +23,7 @@
 @section('content')
 
     <div class="container-fluid bg-semi-white position-relative p-0 banner">
-        <img src="{{ asset('sample/banner-sample.png')}}" class="w-100">
+        <img src="{{ asset('sample/banner-sample.png') }}" class="w-100">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="116" fill="none" viewBox="0 0 1440 116"
             class="position-absolute bottom-0 start-50 translate-middle-x wave" preserveAspectRatio="none">
             <path fill="#fff"
@@ -33,13 +33,11 @@
 
     <div class="container position-relative profile-info">
         <div class="container position-absolute translate-middle start-50 p-4">
-            <div class="postion-relative w-100">
-                <a href="#" class="profile-picture position-absolute translate-middle start-50">
-                    <img src="{{ asset('sample/banner-sample.png') }}" class="img-fluid">
-                </a>
-            </div>
+            <a href="#" class="profile-picture position-absolute d-flex justify-content-center translate-middle start-50">
+                <img src="{{ asset('sample/banner-sample.png') }}" class="rounded-circle m-auto">
+            </a>
             <button class="btn border border-dark"><i class="bi bi-pencil-square"></i></button>
-            
+
         </div>
     </div>
 
