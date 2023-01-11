@@ -8,11 +8,11 @@
 @endsection
 
 @section('content')
-    <div class="container border">
+    <div class="container-fluid border p-0">
         <div class="login-container">
-            <div class="login-section d-flex">
+            <div class="login-section d-flex justify-content-center">
                 <div class="wave-section">
-                    <svg height="100%" viewBox="0 0 462 1095" xmlns="http://www.w3.org/2000/svg">
+                    <svg height="100%" viewBox="0 0 460 1094" xmlns="http://www.w3.org/2000/svg">
                         <path id="Vector"
                             d="M177.449 865.13C184.42 972.32 136.889 922.847 103.934 996.421C70.9794 1070 55.5951 1067.59 0 1096L462 1096L462 -2.01947e-05C449.942 42.4953 415.038 38.0555 416.942 97.0416C418.846 156.028 363.77 164.273 353.63 209.94C343.49 255.607 358.066 260.046 347.926 339.963C337.786 419.88 304.198 377.384 272.105 473.792C240.012 570.199 270.609 601.405 259.43 666.607C247.132 738.331 170.477 757.94 177.449 865.13Z"
                             fill="#FFFFFF" />
@@ -24,7 +24,8 @@
                             <div class="form-header d-flex justify-content-center">
                                 <div class="login-title">
                                     <div class="stuction-text">
-                                        <h1><span class="text-orange">Stuc</span><span class="text-black">tion</span></h1>
+                                        <h1><span class="text-orange">Stuc</span><span class="text-black">tion</span>
+                                        </h1>
                                     </div>
                                     <div class="login-text d-flex justify-content-end">
                                         <h2>Login</h2>
