@@ -73,6 +73,10 @@ figcaption {
     .content .card {
         width: 20rem;
     }
+    
+    .comment span {
+        display: none;
+    }
 }
 
 
