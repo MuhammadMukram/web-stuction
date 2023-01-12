@@ -20,7 +20,7 @@ body {
     background-size: cover;
     background-position-x: -200px;
     background-position-y: center;
-    height: 43.25rem;
+    height: 38.25rem;
     width: 75rem;
     display: flex;
     justify-content: end;
@@ -44,8 +44,13 @@ body {
 }
 
 .signup-section .wave-section {
-    margin-right: -1px;
+    margin-right: -3px;
     border: none;
+}
+
+.signup-section .wave-section svg {
+    stroke: var(--white);
+    stroke-width: 2px;
 }
 
 .signup-title {
@@ -67,12 +72,8 @@ body {
     font-weight: 400;
 }
 
-.form-container .input-bar {
-    width: 100%;
-}
-
 .form-container .form-content {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -108,6 +109,7 @@ body {
     border-top-right-radius: .4rem;
     border-bottom-right-radius: .4rem;
     text-align: center;
+    height: 2.5rem;
     width: 100%;
     outline: none;
 }
@@ -147,12 +149,47 @@ body {
 
 @media (max-width: 1200px) {
     .border .signup-container {
-        width: 61.875rem;
-        /* height: 31.75rem; */
+        height: 37.25rem;
+        width: 65.875rem;
     }
 
     .signup-content .parent-form {
         gap: 1rem;
+    }
+
+    .form-container .form-content {
+        width: 25rem;
+    }
+
+    .form-content .name-form-container {
+        gap: 1rem;
+    }
+
+    .signup-title {
+        width: 10rem;
+    }
+
+    .signup-title h1 {
+        font-size: 2rem;
+    }
+
+    .signup-title h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .border .signup-container {
+        height: 40.25rem;
+        width: 45.5rem;
+    }
+
+    .signup-content .parent-form {
+        gap: 0;
+    }
+
+    .signup-section .wave-section svg {
+        width: 10rem;
     }
 
     .signup-title {
@@ -170,32 +207,9 @@ body {
     .form-container .form-content {
         width: 18rem;
     }
-}
 
-@media (max-width: 992px) {
-    .border .signup-container {
-        width: 47.5rem;
-        /* height: 25.25rem; */
-    }
-
-    .signup-content .parent-form {
-        gap: 0;
-    }
-
-    .signup-title {
-        width: 10rem;
-    }
-
-    .signup-title h1 {
-        font-size: 2rem;
-    }
-
-    .signup-title h2 {
-        font-size: 1.5rem;
-    }
-
-    .form-container .form-content {
-        width: 14rem;
+    .form-content .name-form-container {
+        flex-direction: column;
     }
 
     .form-content .btn-element {
@@ -212,6 +226,10 @@ body {
         height: 2.3rem;
     }
 
+    .input-bar .signup-form::placeholder {
+        letter-spacing: 0;
+    }
+
     p.forgot-password,
     p.to-signup {
         font-size: .8rem;
@@ -221,8 +239,30 @@ body {
 
 @media (max-width: 768px) {
     .border .signup-container {
-        width: 37rem;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        height: 39rem;
+        width: 40rem;
+        box-shadow: none;
     }
+
+    .signup-section .signup-content {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+    }
+
+    .signup-section .wave-section,
+    .signup-section .wave-section svg {
+        display: none;
+    }
+
+    .form-container .form-content {
+        width: 20rem;
+    }
+
+
 }
 
 @media (max-width: 576px) {
@@ -230,7 +270,8 @@ body {
         justify-content: center;
         align-items: center;
         background-image: none;
-        width: 25rem;
+        height: 38rem;
+        width: 27rem;
         box-shadow: none;
     }
 
@@ -244,8 +285,19 @@ body {
         display: none;
     }
 
+    .form-container .form-content {
+        width: 16rem;
+    }
+
     .signup-content .form-container {
         z-index: 2;
     }
 
+    .form-content .name-form-container {
+        gap: .5rem;
+    }
+
+    .form-content .btn-element {
+        gap: 1rem;
+    }
 }
