@@ -1,6 +1,3 @@
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
-@import '../layouts/root.css';
-
 body {
     background-color: var(--semi-white);
     padding: 0;
