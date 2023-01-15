@@ -27,7 +27,7 @@
                         <i class="bi bi-person-fill"></i>
                         <span class="ms-2">Account</span>
                     </div>
-                    <rectangle class="ms-auto bg-dark pe-1 py-1">&nbsp;</rectangle>
+                    <span class="ms-auto bg-dark pe-1 py-1">&nbsp;</span>
                 </button>
 
                 <button class="btn container-fluid d-flex justify-content-between pe-0 rounded-0 py-0 mt-1">
@@ -35,7 +35,7 @@
                         <i class="bi bi-shield-lock-fill"></i>
                         <span class="ms-2">Password</span>
                     </div>
-                    <rectangle class="ms-auto bg-dark pe-1 py-1">&nbsp;</rectangle>
+                    <span class="ms-auto bg-dark pe-1 py-1">&nbsp;</span>
                 </button>
 
                 <button class="btn container-fluid d-flex justify-content-between pe-0 rounded-0 py-0 mt-1">
@@ -43,7 +43,7 @@
                         <i class="bi bi-brush-fill"></i>
                         <span class="ms-2">Preferences</span>
                     </div>
-                    <rectangle class="ms-auto bg-dark pe-1 py-1">&nbsp;</rectangle>
+                    <span class="ms-auto bg-dark pe-1 py-1">&nbsp;</span>
                 </button>
 
                 <button class="btn container-fluid d-flex justify-content-between pe-0 rounded-0 py-0 mt-1">
@@ -51,7 +51,7 @@
                         <i class="bi bi-power"></i>
                         <span class="ms-2">Log Out</span>
                     </div>
-                    <rectangle class="ms-auto bg-dark pe-1 py-1">&nbsp;</rectangle>
+                    <span class="ms-auto bg-dark pe-1 py-1">&nbsp;</span>
                 </button>
 
             </div>
