@@ -19,10 +19,9 @@
                     </svg>
                 </div>
                 <div class="signup-content bg-white d-flex justify-content-center align-items-center">
-                    {{-- <div class="d-flex justify-content-center align-items-center"> --}}
                     <div class="inline parent-form">
                         <div class="form-header d-flex justify-content-center">
-                            <div class="signup-title">
+                            <div class="auth-title">
                                 <div class="stuction-text">
                                     <h1><span class="text-orange">Stuc</span><span class="text-black">tion</span>
                                     </h1>
@@ -115,7 +114,6 @@
                         </div>
                     </div>
                 </div>
-                {{-- </div> --}}
             </div>
         </div>
     </div>

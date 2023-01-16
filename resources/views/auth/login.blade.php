@@ -21,7 +21,7 @@
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="inline parent-form">
                             <div class="form-header d-flex justify-content-center">
-                                <div class="login-title">
+                                <div class="auth-title">
                                     <div class="stuction-text">
                                         <h1><span class="text-orange">Stuc</span><span class="text-black">tion</span>
                                         </h1>

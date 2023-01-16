@@ -1,20 +1,4 @@
-body {
-    background-color: var(--semi-white);
-    padding: 0;
-    margin: 0;
-}
-
-.border {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.border .mobile-wave {
-    display: none;
-}
+@import './auth-element.css';
 
 .border .login-container {
     background-image: url(../../resources/login-photo.png);
@@ -47,25 +31,6 @@ body {
 .login-section .wave-section {
     margin-right: -1px;
     border: none;
-}
-
-.login-title {
-    width: 12.5rem;
-    height: fit-content;
-}
-
-.login-title h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.login-title h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 2rem;
-    font-weight: 400;
 }
 
 .form-container .input-bar {
