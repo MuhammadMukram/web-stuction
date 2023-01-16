@@ -41,8 +41,7 @@
                                                     <i class="bi bi-person-fill"></i>
                                                 </div>
                                                 <span> </span>
-                                                <input type="text" class="login-form bg-white p-2"
-                                                    placeholder="Username">
+                                                <input type="text" class="auth-form bg-white p-2" placeholder="Username">
                                             </div>
                                         </div>
                                         <div class="form-element">
@@ -52,17 +51,21 @@
                                                     <i class="bi bi-key-fill"></i>
                                                 </div>
                                                 <span> </span>
-                                                <input type="password" class="login-form bg-white p-2"
+                                                <input type="password" class="auth-form bg-white p-2"
                                                     placeholder="Password">
                                             </div>
-                                            <p class="h6 mt-2 forgot-password"><a href="">Forgot Password?</a></p>
+                                            <a href="#" class="forgot-password">
+                                                <p class="h6 mt-2">Forgot Password?</p>
+                                            </a>
                                         </div>
                                         <div class="btn-element">
                                             <div class="btn-area">
-                                                <button type="button" class="btn login-btn w-100 p-1">Login</button>
+                                                <button type="button" class="btn auth-btn w-100 p-1">Login</button>
                                             </div>
                                             <div class="text-center">
-                                                <p class="h6 to-signup"><a href="#">Don't have account?</a></p>
+                                                <a href="#" class="to-signup-login">
+                                                    <p class="h6">Don't have account?</p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

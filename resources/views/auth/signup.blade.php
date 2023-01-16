@@ -42,7 +42,7 @@
                                                     <i class="bi bi-person-fill-up"></i>
                                                 </div>
                                                 <span> </span>
-                                                <input type="text" class="signup-form bg-white p-2"
+                                                <input type="text" class="auth-form bg-white p-2"
                                                     placeholder="First Name" required>
                                             </div>
                                             <div class="input-bar d-flex">
@@ -50,7 +50,7 @@
                                                     <i class="bi bi-person-fill-down"></i>
                                                 </div>
                                                 <span> </span>
-                                                <input type="text" class="signup-form bg-white p-2"
+                                                <input type="text" class="auth-form bg-white p-2"
                                                     placeholder="Last Name" required>
                                             </div>
                                         </div>
@@ -62,7 +62,7 @@
                                                 <i class="bi bi-envelope-at-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="email" class="signup-form bg-white p-2" placeholder="Email"
+                                            <input type="email" class="auth-form bg-white p-2" placeholder="Email"
                                                 required>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@
                                                 <i class="bi bi-person-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="text" class="signup-form bg-white p-2" placeholder="Username"
+                                            <input type="text" class="auth-form bg-white p-2" placeholder="Username"
                                                 required>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                                                 <i class="bi bi-key-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="password" class="signup-form bg-white p-2" placeholder="Password"
+                                            <input type="password" class="auth-form bg-white p-2" placeholder="Password"
                                                 required>
                                         </div>
                                     </div>
@@ -95,17 +95,17 @@
                                                 <i class="bi bi-key-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="password" class="signup-form bg-white p-2"
+                                            <input type="password" class="auth-form bg-white p-2"
                                                 placeholder="Confirm Password" required>
                                         </div>
                                     </div>
                                     <div class="btn-element mt-3">
                                         <div class="btn-area">
-                                            <button type="submit" class="btn signup-btn w-100 p-1">Signup</button>
+                                            <button type="submit" class="btn auth-btn w-100 p-1">Signup</button>
                                         </div>
                                         <div class="text-center">
-                                            <a href="#">
-                                                <p class="h6 to-signup">Already have an account?</p>
+                                            <a href="#" class="to-signup-login">
+                                                <p class="h6">Already have an account?</p>
                                             </a>
                                         </div>
                                     </div>

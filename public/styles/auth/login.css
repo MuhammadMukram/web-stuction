@@ -41,62 +41,8 @@
     width: 20rem;
 }
 
-.form-content h5 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.input-bar {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    border-radius: .4rem;
-}
-
-.input-icon i {
-    font-size: 1.5rem;
-}
-
-.input-bar .input-icon {
-    border-top-left-radius: .4rem;
-    border-bottom-left-radius: .4rem;
-}
-
-.input-bar .login-form {
-    padding: 0;
-    border: var(--white) 1px solid;
-    border-top-right-radius: .4rem;
-    border-bottom-right-radius: .4rem;
-    text-align: center;
-    width: 100%;
-    outline: none;
-}
-
-.input-bar .login-form:focus {
-    border: var(--semi-white) 1px solid;
-}
-
-.input-bar .login-form::placeholder {
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-.input-bar .login-form:focus::placeholder {
-    color: transparent;
-}
-
-.input-bar span {
-    background-color: var(--semi-white);
-    width: .5%;
-}
-
 .form-content .btn-element {
-    display: flex;
-    flex-direction: column;
     gap: 3rem;
-}
-
-.btn-area .login-btn {
-    background-color: var(--orange);
-    color: var(--white);
 }
 
 /*
@@ -113,18 +59,6 @@
         gap: 1rem;
     }
 
-    .login-title {
-        width: 10rem;
-    }
-
-    .login-title h1 {
-        font-size: 2rem;
-    }
-
-    .login-title h2 {
-        font-size: 1.5rem;
-    }
-
     .form-container .form-content {
         width: 18rem;
     }
@@ -134,18 +68,6 @@
     .border .login-container {
         width: 47.5rem;
         height: 25.25rem;
-    }
-    .login-content .parent-form {
-        gap: 0;
-    }
-    .login-title {
-        width: 10rem;
-    }
-    .login-title h1 {
-        font-size: 2rem;
-    }
-    .login-title h2 {
-        font-size: 1.5rem;
     }
     .form-container .form-content {
         width: 14rem;
@@ -161,11 +83,6 @@
     .input-bar .login-form {
         height: 2.3rem;
     }
-    p.forgot-password,
-    p.to-signup {
-        font-size: .8rem;
-    }
-
 }
 
 @media (max-width: 768px) {
@@ -185,7 +102,6 @@
     .login-section .login-content {
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-
     }
     .login-section .wave-section {
         display: none;

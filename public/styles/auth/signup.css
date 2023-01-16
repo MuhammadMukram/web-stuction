@@ -50,63 +50,8 @@
     gap: 1rem;
 }
 
-.form-content h5 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.input-bar {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    border-radius: .4rem;
-}
-
-.input-icon i {
-    font-size: 1.5rem;
-}
-
-.input-bar .input-icon {
-    border-top-left-radius: .4rem;
-    border-bottom-left-radius: .4rem;
-}
-
-.input-bar .signup-form {
-    padding: 0;
-    border: var(--white) 1px solid;
-    border-top-right-radius: .4rem;
-    border-bottom-right-radius: .4rem;
-    text-align: center;
-    height: 2.5rem;
-    width: 100%;
-    outline: none;
-}
-
-.input-bar .signup-form:focus {
-    border: var(--semi-white) 1px solid;
-}
-
-.input-bar .signup-form::placeholder {
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-.input-bar .signup-form:focus::placeholder {
-    color: transparent;
-}
-
-.input-bar span {
-    background-color: var(--semi-white);
-    width: .5%;
-}
-
 .form-content .btn-element {
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
-}
-
-.btn-area .signup-btn {
-    background-color: var(--orange);
-    color: var(--white);
 }
 
 /*
@@ -130,18 +75,6 @@
     .form-content .name-form-container {
         gap: 1rem;
     }
-
-    .signup-title {
-        width: 10rem;
-    }
-
-    .signup-title h1 {
-        font-size: 2rem;
-    }
-
-    .signup-title h2 {
-        font-size: 1.5rem;
-    }
 }
 
 @media (max-width: 992px) {
@@ -150,24 +83,8 @@
         width: 45.5rem;
     }
 
-    .signup-content .parent-form {
-        gap: 0;
-    }
-
     .signup-section .wave-section svg {
         width: 10rem;
-    }
-
-    .signup-title {
-        width: 10rem;
-    }
-
-    .signup-title h1 {
-        font-size: 2rem;
-    }
-
-    .signup-title h2 {
-        font-size: 1.5rem;
     }
 
     .form-container .form-content {
@@ -194,11 +111,6 @@
 
     .input-bar .signup-form::placeholder {
         letter-spacing: 0;
-    }
-
-    p.forgot-password,
-    p.to-signup {
-        font-size: .8rem;
     }
 
 }
