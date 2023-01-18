@@ -32,7 +32,8 @@
                             </div>
                         </div>
                         <div class="form-container d-flex justify-content-center">
-                            <form method="POST" action="#" class="inline d-flex justify-content-center">
+                            <form method="POST" action="signup/verify" class="inline d-flex justify-content-center">
+                                @csrf
                                 <div class="form-content">
                                     <div class="form-element">
                                         <h5 class="text-orange">Name</h5>
@@ -42,16 +43,16 @@
                                                     <i class="bi bi-person-fill-up"></i>
                                                 </div>
                                                 <span> </span>
-                                                <input type="text" class="auth-form bg-white p-2"
-                                                    placeholder="First Name" required>
+                                                <input type="text" class="auth-form bg-white p-2" name="first_name"
+                                                    placeholder="First Name" value="{{ old('first_name') }}" required>
                                             </div>
                                             <div class="input-bar d-flex">
                                                 <div class="input-icon bg-white px-3 d-flex align-items-center">
                                                     <i class="bi bi-person-fill-down"></i>
                                                 </div>
                                                 <span> </span>
-                                                <input type="text" class="auth-form bg-white p-2"
-                                                    placeholder="Last Name" required>
+                                                <input type="text" class="auth-form bg-white p-2" name="last_name"
+                                                    placeholder="Last Name" value="{{ old('last_name') }}" required>
                                             </div>
                                         </div>
                                     </div>
@@ -62,8 +63,8 @@
                                                 <i class="bi bi-envelope-at-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="email" class="auth-form bg-white p-2" placeholder="Email"
-                                                required>
+                                            <input type="email" class="auth-form bg-white p-2" name="email"
+                                                placeholder="Email" value="{{ old('email') }}" required>
                                         </div>
                                     </div>
                                     <div class="form-element">
@@ -73,8 +74,8 @@
                                                 <i class="bi bi-person-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="text" class="auth-form bg-white p-2" placeholder="Username"
-                                                required>
+                                            <input type="text" class="auth-form bg-white p-2" name="username"
+                                                placeholder="Username" value="{{ old('username') }}" required>
                                         </div>
                                     </div>
                                     <div class="form-element">
@@ -84,9 +85,17 @@
                                                 <i class="bi bi-key-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="password" class="auth-form bg-white p-2" placeholder="Password"
-                                                required>
+                                            <input type="password" class="auth-form bg-white p-2" name="password"
+                                                placeholder="Password" required>
+                                            {{-- @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror --}}
                                         </div>
+                                        @if ($errors->has('password'))
+                                            <span class="text-danger">{{ $errors->first('password') }}</span>
+                                        @endif
                                     </div>
                                     <div class="form-element">
                                         <h5 class="text-orange">Confirm Password</h5>
@@ -95,7 +104,7 @@
                                                 <i class="bi bi-key-fill"></i>
                                             </div>
                                             <span> </span>
-                                            <input type="password" class="auth-form bg-white p-2"
+                                            <input type="password" class="auth-form bg-white p-2" name="confirm_password"
                                                 placeholder="Confirm Password" required>
                                         </div>
                                     </div>
