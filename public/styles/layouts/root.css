@@ -77,6 +77,11 @@ body {
     color: var(--grey);
 }
 
+.interactive-icon {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 .title {
     font-size: 1;
     font-weight: 700;
