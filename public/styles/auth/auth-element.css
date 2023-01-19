@@ -1,0 +1,135 @@
+body {
+    background-color: var(--semi-white);
+    padding: 0;
+    margin: 0;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.auth-title {
+    width: 12.5rem;
+    height: fit-content;
+}
+
+.auth-title h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.auth-title h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.form-content h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.input-bar {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+}
+
+.input-icon i {
+    font-size: 1.5rem;
+}
+
+.input-bar .input-icon {
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+}
+
+.input-bar .auth-form {
+    padding: 0;
+    border: var(--white) 1px solid;
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    text-align: center;
+    height: 2.5rem;
+    width: 100%;
+    outline: none;
+}
+
+.input-bar .auth-form:focus {
+    border: var(--semi-white) 1px solid;
+}
+
+.input-bar .auth-form::placeholder {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.input-bar .auth-form:focus::placeholder {
+    color: transparent;
+}
+
+.input-bar span {
+    background-color: var(--semi-white);
+    width: .5%;
+}
+
+.btn-area .auth-btn {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+a.forgot-password,
+a.to-signup-login {
+    text-decoration: none;
+}
+
+.form-content .btn-element {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .auth-title {
+        width: 10rem;
+    }
+
+    .auth-title h1 {
+        font-size: 2rem;
+    }
+
+    .auth-title h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .parent-form {
+        gap: 0;
+    }
+
+    .auth-title {
+        width: 10rem;
+    }
+
+    .auth-title h1 {
+        font-size: 2rem;
+    }
+
+    .auth-title h2 {
+        font-size: 1.5rem;
+    }
+
+    a.forgot-password p,
+    a.to-signup-login p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 768px) {
+}

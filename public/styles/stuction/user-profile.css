@@ -1,7 +1,7 @@
 .banner,
 .banner img {
     max-height: 512px;
-    min-height: 256px;
+    min-height: 448px;
 }
 
 .banner img {
@@ -13,22 +13,146 @@
     max-height: 128px;
 }
 
-.profile-info .container {
-    top: calc(-10rem - 2vw);
+.profile-info {
+    top: 20rem;
+    /* top: min(max(calc(50rem - 5vw), 45rem), 20rem); */
+    /* top: minmax(calc(100rem + 10vw), 50rem); */
+}
+
+.profile-info .header {
     border-radius: 12px;
-    background-color: #ced0cec8;
+    height: fit-content;
+    background-color: #ced0ce93;
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
 }
 
 .profile-picture img {
-    width: calc(8rem + 10vw);
-    height: calc(8rem + 10vw);
+    width: min(calc(10rem + 10vw), 20rem);
+    height: min(calc(10rem + 10vw), 20rem);
     object-fit: cover;
 }
 
+.container .profile-info-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: min(calc(4rem + 7vw), 10rem);
+    row-gap: 2rem;
+}
+
+.profile-info-section .account-info {
+    column-gap: 5%;
+}
+
+.account-info span {
+    width: .2rem;
+    background-color: rgba(48, 47, 47, 0.2)
+}
+
+.profile-name h1 {
+    font-weight: 700;
+}
+
+.profile-description .bio {
+    max-width: 50rem;
+}
+
+/*
+ * Content Section
+ */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.content .card {
+    min-width: 20rem;
+    margin: 0 auto;
+}
+
+figure img,
+.content .card img {
+    width: 100%;
+    height: 15.2rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content .card i {
+    font-size: 1.5rem;
+}
+
+.content .card .card-body {
+    height: 6rem;
+}
+
+[class*=' bi-heart-'] {
+    animation: 0.3s ease-out 0s 1 appear;
+}
+
+.author img.profile {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: rgb(127, 127, 127);
+}
+
+.title:hover {
+    color: var(--orange);
+}
+
+
+/*
+ * Responsiveness
+ */
+
+@media (max-width: 1200px) {
+    .profile-info {
+        top: min(calc(20rem + 10vw), 30rem);
+    }
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 992px) {
+    .profile-info {
+        top: calc(15rem + 25vw);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .profile-info {
+        top: calc(30rem + 30vw);
+    }
+    .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 @media (max-width: 576px) {
+    .profile-info {
+        top: calc(35rem + 30vw);
+    }
+
     svg.wave {
         height: 76px;
+    }
+
+    .account-info span {
+        display: none;
+    }
+
+    .account-info .element h4{
+        font-size: calc(1.4rem - 1.5vw);
     }
 }

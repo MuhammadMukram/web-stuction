@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,10 +22,18 @@ Route::get('/profile', function () {
     return view('stuction.user-profile');
 });
 
+
+/*
+ * Auth Routes
+ */
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->name('login');
 
+Route::post('/signup/verify', [UserController::class, 'signup']);
+// Route::post('/signup/verify', function () {
+//     dd('hello');
+// });
 Route::get('/signup', function () {
     return view('auth.signup');
 });
