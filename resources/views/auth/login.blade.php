@@ -63,7 +63,7 @@
                                                 <button type="button" class="btn auth-btn w-100 p-1">Login</button>
                                             </div>
                                             <div class="text-center">
-                                                <a href="#" class="to-signup-login">
+                                                <a href="{{ route('page.signup') }}" class="to-signup-login">
                                                     <p class="h6">Don't have account?</p>
                                                 </a>
                                             </div>

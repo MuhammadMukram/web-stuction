@@ -15,8 +15,6 @@
 
 .profile-info {
     top: 20rem;
-    /* top: min(max(calc(50rem - 5vw), 45rem), 20rem); */
-    /* top: minmax(calc(100rem + 10vw), 50rem); */
 }
 
 .profile-info .header {
@@ -152,7 +150,7 @@ figure img,
         display: none;
     }
 
-    .account-info .element h4{
+    .account-info .element h4 {
         font-size: calc(1.4rem - 1.5vw);
     }
 }

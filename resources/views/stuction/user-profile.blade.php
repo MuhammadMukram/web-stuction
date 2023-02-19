@@ -5,15 +5,6 @@
 @section('styles')
     <link rel="stylesheet" href="{{ asset('styles/layouts/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/stuction/user-profile.css') }}">
-    <style>
-        /* .banner {
-                                        background-image: url('{{ asset('sample/banner-sample.png') }} ');
-                                        overflow: hidden;
-                                        background-position: center;
-                                        background-size: cover;
-                                        height: 768px;
-                                    } */
-    </style>
 @endsection
 
 @section('navbar')

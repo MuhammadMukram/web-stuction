@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,30 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('stuction.homepage');
-});
-
-Route::get('/profile', function () {
-    return view('stuction.user-profile');
-});
-
+Route::get('/', [PageController::class, 'index'])->name('page.index');
+Route::get('/profile', [PageController::class, 'profile'])->name('page.profile');
 
 /*
- * Auth Routes
+ * Page & It's Auth Routes
  */
-Route::get('/login', function () {
-    return view('auth.login');
-})->name('login');
+Route::get('/login', [PageController::class, 'login'])->name('page.login');
+Route::post('/login', [UsersController::class, 'login'])->name('auth.login');
 
-Route::post('/signup/verify', [UserController::class, 'signup']);
-// Route::post('/signup/verify', function () {
-//     dd('hello');
-// });
-Route::get('/signup', function () {
-    return view('auth.signup');
-});
+Route::get('/signup', [PageController::class, 'signup'])->name('page.signup');
+Route::post('/signup', [UsersController::class, 'signup'])->name('auth.signup');
 
-Route::get('/settings', function() {
-    return view('stuction.user-settings');
-});
+Route::get('/settings', [PageController::class, 'settings'])->name('page.settings');
