@@ -5,15 +5,13 @@
     background-size: cover;
     background-position-x: -200px;
     background-position-y: center;
-    height: 38.25rem;
-    width: 75rem;
+    width: min(calc(75rem + 20vw), 70rem);
     display: flex;
     justify-content: end;
 }
 
 .signup-container .signup-section {
-    height: 100%;
-    width: 75%;
+    width: 80%;
 }
 
 .signup-section .signup-content {
@@ -39,7 +37,6 @@
 }
 
 .form-container .form-content {
-    width: 80%;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -48,6 +45,11 @@
 .form-content .name-form-container {
     display: flex;
     gap: 1rem;
+}
+
+.form-element span.text-danger {
+    font-size: .9rem;
+    font-weight: 500;
 }
 
 .form-content .btn-element {
@@ -59,17 +61,8 @@
  */
 
 @media (max-width: 1200px) {
-    .border .signup-container {
-        height: 37.25rem;
-        width: 65.875rem;
-    }
-
     .signup-content .parent-form {
         gap: 1rem;
-    }
-
-    .form-container .form-content {
-        width: 25rem;
     }
 
     .form-content .name-form-container {
@@ -78,17 +71,12 @@
 }
 
 @media (max-width: 992px) {
-    .border .signup-container {
-        height: 40.25rem;
-        width: 45.5rem;
-    }
-
     .signup-section .wave-section svg {
         width: 10rem;
     }
 
     .form-container .form-content {
-        width: 18rem;
+        width: max(calc(10rem + 15vw), 10rem);
     }
 
     .form-content .name-form-container {
@@ -118,11 +106,13 @@
 @media (max-width: 768px) {
     .border .signup-container {
         justify-content: center;
-        align-items: center;
         background-image: none;
-        height: 39rem;
-        width: 40rem;
+        width: calc(20rem + 20vw);
         box-shadow: none;
+    }
+
+    .signup-container {
+        padding: 2rem 0;
     }
 
     .signup-section .signup-content {
@@ -135,12 +125,6 @@
     .signup-section .wave-section svg {
         display: none;
     }
-
-    .form-container .form-content {
-        width: 20rem;
-    }
-
-
 }
 
 @media (max-width: 576px) {
@@ -148,8 +132,6 @@
         justify-content: center;
         align-items: center;
         background-image: none;
-        height: 38rem;
-        width: 27rem;
         box-shadow: none;
     }
 
@@ -161,10 +143,6 @@
 
     .signup-section .wave-section {
         display: none;
-    }
-
-    .form-container .form-content {
-        width: 16rem;
     }
 
     .signup-content .form-container {

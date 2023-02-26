@@ -6,7 +6,6 @@ body {
 
 .border {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -14,7 +13,6 @@ body {
 
 .auth-title {
     width: 12.5rem;
-    height: fit-content;
 }
 
 .auth-title h1 {
@@ -132,4 +130,9 @@ a.to-signup-login {
 }
 
 @media (max-width: 768px) {
+    .border{
+        height: 0;
+        align-items: start;
+    }
+
 }
