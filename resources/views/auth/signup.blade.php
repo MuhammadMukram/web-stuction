@@ -18,23 +18,24 @@
                             d="M177.449 865.13C184.42 972.32 136.889 922.847 103.934 996.421C70.9794 1070 55.5951 1067.59 0 1096L462 1096L462 -2.01947e-05C449.942 42.4953 415.038 38.0555 416.942 97.0416C418.846 156.028 363.77 164.273 353.63 209.94C343.49 255.607 358.066 260.046 347.926 339.963C337.786 419.88 304.198 377.384 272.105 473.792C240.012 570.199 270.609 601.405 259.43 666.607C247.132 738.331 170.477 757.94 177.449 865.13Z" />
                     </svg>
                 </div>
-                
+
                 <div class="signup-content bg-white d-flex justify-content-center align-items-center">
-                    <div class="inline parent-form">
+                    <div class="inline parent-form my-2">
                         <div class="form-header d-flex justify-content-center">
                             <div class="auth-title">
                                 <div class="stuction-text">
                                     <h1><span class="text-orange">Stuc</span><span class="text-black">tion</span>
                                     </h1>
                                 </div>
+
                                 <div class="signup-text d-flex justify-content-end">
                                     <h2>Signup</h2>
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-container d-flex justify-content-center">
                             <div class="inline d-flex justify-content-center">
-
                                 <div class="form-content">
                                     <div class="form-element">
                                         <h5 class="text-orange">Name</h5>
@@ -50,6 +51,7 @@
                                                 </div>
                                                 <span class="text-danger" id="first-name-error"></span>
                                             </div>
+
                                             <div>
                                                 <div class="input-bar d-flex">
                                                     <div class="input-icon bg-white px-3 d-flex align-items-center">
@@ -59,7 +61,6 @@
                                                     <input type="text" class="auth-form bg-white p-2" name="last_name"
                                                         id="last_name" placeholder="Last Name" required>
                                                 </div>
-                                                <span class="text-danger" id="last-name-error"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -74,6 +75,7 @@
                                             <input type="email" class="auth-form bg-white p-2" name="email"
                                                 id="email" placeholder="Email" required>
                                         </div>
+
                                         <span class="text-danger" id="email-error"></span>
                                     </div>
 
@@ -158,11 +160,11 @@
 
                 for (var key in data) {
                     user_data.append(key, data[key]);
-                    console.log(key + '=>' + data[key]);
-                    
+                    // console.log(key + '=>' + data[key]);
+
                 }
 
-                
+
 
                 $.ajax({
                     url: '{{ route('auth.signup') }}',
@@ -177,7 +179,14 @@
                         validateForm(error.email, '#email-error');
                         validateForm(error.username, '#username-error');
                         validateForm(error.password, '#password-error');
-                        validateForm(error.password_confirmation, '#confirm-password-error');
+                        validateForm(error.confirm_password, '#confirm-password-error');
+
+                        $('span.text-danger').each(function() {
+                            var text = $(this).text();
+                            if (text.includes(',')) {
+                                $(this).text(text.split(',')[1]);
+                            }
+                        });
 
                         console.log(error);
 
@@ -186,7 +195,6 @@
 
                             window.location.replace('{{ route('page.login') }}');
                         }
-
                     }
                 });
 
@@ -202,7 +210,5 @@
                 }
             }
         });
-
-
     </script>
 @endsection

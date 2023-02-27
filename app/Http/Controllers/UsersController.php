@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Validator;
 class UsersController extends Controller
 {
 
-    /* 
+    /*
      *  Sign Up
      */
     public function signup(Request $request)
@@ -20,20 +20,18 @@ class UsersController extends Controller
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required|email|unique:users',
-            'username' => 'required',
+            'username' => 'required|unique:users',
             'password' => ['required', 'min:6', 'regex:/[0-9]/', 'regex:/[A-Z]/'],
-            'confirm_password' => 'required|min:6|same:password',
+            'confirm_password' => 'same:password',
         ]);
 
         if ($data->fails()) {
             return response()->json($data->messages(), 200);
         }
 
-        /* 
+        /*
          *  User Informations
          */
-
-        // return response()->json(['User success' => $request ]); -- Debug
         $user = new Users();
         $user->first_name = $request['first_name'];
         $user->last_name = $request['last_name'];
@@ -41,7 +39,7 @@ class UsersController extends Controller
         $user->email = $request['email'];
         $user->save();
 
-        /* 
+        /*
          *  Securities
          */
         $registeredPassword = bcrypt($request['password']);
@@ -52,11 +50,10 @@ class UsersController extends Controller
         $password->save();
     }
 
-    /* 
+    /*
      *  Login
      */
     public function login(Request $request)
     {
     }
-
 }
